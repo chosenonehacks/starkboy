@@ -1,0 +1,36 @@
+# Godot generated data
+.godot/
+.mono/
+.import/
+
+# Local editor and MCP integrations
+.ai-game-dev/
+.claude/
+.codex/
+addons/godot_mcp/
+godot-mcp-config.json
+
+# Exported games, templates and generated output
+build/
+tmp/
+output/
+*.tpz
+*.zip
+
+# IDE and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Runtime logs and crash dumps
+*.log
+*.dmp
+*.crash
+
+# Local credentials and private SteamPipe files
+.env
+.env.*
+steamworks/scripts/*.vdf
+!steamworks/scripts/*.vdf.template
+

@@ -1,0 +1,16 @@
+"DepotBuildConfig"
+{
+    "DepotID"      "DEPOTID"
+    "ContentRoot"  "..\\..\\build\\steam\\StarkBoy"
+
+    "FileMapping"
+    {
+        "LocalPath"  "*"
+        "DepotPath"  "."
+        "recursive"  "1"
+    }
+
+    "FileExclusion" "*.pdb"
+    "FileExclusion" "*.log"
+}
+

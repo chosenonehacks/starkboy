@@ -1,0 +1,27 @@
+# Godot
+.godot/
+.mono/
+.import/
+
+# Builds and temporary files
+build/
+tmp/
+output/
+
+# Development integrations
+.claude/
+.codex/
+.ai-game-dev/
+
+# Local MCP configuration
+addons/godot_mcp/
+godot-mcp-config.json
+
+# IDE and system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

@@ -1,0 +1,15 @@
+"appbuild"
+{
+    "appid"        "APPID"
+    "desc"         "StarkBoy Windows release"
+    "buildoutput"  "..\\output"
+    "contentroot"  "..\\..\\build\\steam"
+    "setlive"      ""
+    "preview"      "0"
+
+    "depots"
+    {
+        "DEPOTID"  "depot_build_DEPOTID.vdf"
+    }
+}
+
