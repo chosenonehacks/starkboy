@@ -255,3 +255,26 @@ Priorytety opcjonalne: osobne sprite’y thug/thrower/rider, fizyczne pociski, w
 - Steam release EXE: `build/steam/StarkBoy/StarkBoy.exe`, 125 686 408 B, SHA-256 `1ee4ed60a3396348fea7928513eb05b41a42904edd56f54001ef265b4f134f98`.
 - Steam ZIP: `build/steam/StarkBoy_v29_Windows_Steam.zip`, 55 729 297 B, SHA-256 `b0e6fdff9c554bdc69bdfa87a65b92ebf259ab1c2b6e58396330ee977cf54a13`.
 - Oba EXE uruchomiono headless z `--quit-after 3`; oba zakończyły się kodem 0.
+
+## Checkpoint 19 — publiczne repozytorium i GitHub Release
+
+- Repozytorium Git zostało zainicjalizowane i opublikowane pod adresem `https://github.com/chosenonehacks/starkboy`.
+- Widoczność repozytorium została zmieniona z private na **PUBLIC**.
+- Dodano główny `.gitignore`, który wyklucza `.godot/`, `.mono/`, `.ai-game-dev/`, `.claude/`, `.codex/`, lokalny addon MCP, `build/`, `tmp/`, `output/`, ZIP/TPZ, logi, crashe, sekrety `.env` oraz prywatne pliki SteamPipe `.vdf`.
+- Buildy, szablony eksportu i lokalne narzędzia pozostały na dysku, ale nie są śledzone przez Git.
+- Po oczyszczeniu repo zawierało 164 śledzone pliki, około 58 MB łącznie; największy plik miał około 2,53 MB.
+- Audyt przed upublicznieniem nie wykrył tokenów, kluczy prywatnych, danych bankowych ani rzeczywistych numerów PESEL/NIP. W dokumentacji występują wyłącznie ogólne instrukcje podatkowe.
+- README zostało rozbudowane dla `v29`: opis gry, mechaniki, bossowie, sterowanie, poprawna zasada ładowania baterii, testy, debug export, Steam release, AI disclosure i licencje.
+- Commit README: `d7268bb Update README for v29`; stan został wysłany na `origin/main`.
+- Zainstalowano oficjalne GitHub CLI 2.97.0 i autoryzowano konto `chosenonehacks`. W handoffie ani repozytorium nie zapisano tokena uwierzytelniającego.
+- Opublikowano GitHub Release: `https://github.com/chosenonehacks/starkboy/releases/tag/v29`.
+- Release ma tag `v29`, nazwę `StarkBoy v29 — Arcade Combat Update`, nie jest draftem ani prerelease.
+- Assety release: `StarkBoy_v29_Windows_Steam.zip` (55 729 297 B) i `SHA256SUMS.txt`.
+- SHA-256 opublikowanego ZIP-a: `b0e6fdff9c554bdc69bdfa87a65b92ebf259ab1c2b6e58396330ee977cf54a13`.
+
+## Następny zalecany krok
+
+- Po akceptacji KYC dokończyć Steam Tax Interview i sprawdzić finalną stawkę withholding.
+- Uzupełnić brakujące pola w `AI_CONTENT_DISCLOSURE.md` oraz dokumentację praw komercyjnych do assetów AI.
+- Przygotować kapsuły Steam, minimum pięć screenshotów, opis sklepu, tagi, języki i wymagania sprzętowe.
+- Po otrzymaniu APPID/DEPOTID skonfigurować prywatne pliki SteamPipe na podstawie szablonów i wysłać `v29` albo nowszy build na testową gałąź Steam.
